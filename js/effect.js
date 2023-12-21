@@ -9,5 +9,4 @@ const theme = document.querySelector('.header__theme')
 theme.onclick = () => {
 let themeIcon = document.querySelector('.header__theme_icon') 
     themeIcon.classList.toggle('header__theme_active_float')
-    // theme.classList.toggle('')
 }
