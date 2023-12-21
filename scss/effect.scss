@@ -22,10 +22,13 @@ body{
 }
 .body{
      background-color: $top-color;
+     color: $text-color;
 }
-body, .green-theme{
+.green-theme{
+color: $main-color;
 background-color: #e5f8d3;
-color: $text-color;
+
+
 }
 h1{
     font-weight: 800;
@@ -112,7 +115,7 @@ p{
          gap: 16px;
          flex-direction: column;
          background-color: $top-color;
-         width: 160px;
+         width: 200px;
          border-radius: 20px;
          box-shadow: -6px 5px 20px #9ca3962c;
          padding: 36px;
@@ -123,6 +126,7 @@ p{
          }
          &_bar{
             font-size: $text-size;
+            cursor: pointer;
          }
     } 
     }
@@ -144,11 +148,26 @@ p{
         position: absolute;
     }
     .main{
+        display: flex;
+        margin-top: 40px;
+        position: relative;
         &__photo{
-            background-image: url('../effects/Subtract_main.png');
-            background-repeat: no-repeat;
-            width: 700px;
-            height: 600px;
-        }
+            mask-image: url('../effects/Subtract_main.png');
+            mask-repeat: no-repeat
         
+    }
+    &__info{
+        display: flex;
+        
+    }
+    &__header{
+        position: absolute;
+        left: 25%;
+        font-size: $header-size;
+        width: 330px;
+    }
+   
+}
+video{
+        height: 600px;
     }

@@ -26,11 +26,12 @@ body {
 
 .body {
   background-color: #F4F4F4;
+  color: #020D31;
 }
 
-body, .green-theme {
+.green-theme {
+  color: #60982D;
   background-color: #e5f8d3;
-  color: #020D31;
 }
 
 h1 {
@@ -116,7 +117,7 @@ p {
   gap: 16px;
   flex-direction: column;
   background-color: #F4F4F4;
-  width: 160px;
+  width: 200px;
   border-radius: 20px;
   box-shadow: -6px 5px 20px rgba(156, 163, 150, 0.1725490196);
   padding: 36px;
@@ -128,6 +129,7 @@ p {
 }
 .header__menu_bar {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .header__theme_active_float {
@@ -150,9 +152,27 @@ p {
   position: absolute;
 }
 
+.main {
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+}
 .main__photo {
-  background-image: url("../effects/Subtract_main.png");
-  background-repeat: no-repeat;
-  width: 700px;
+  -webkit-mask-image: url("../effects/Subtract_main.png");
+          mask-image: url("../effects/Subtract_main.png");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+.main__info {
+  display: flex;
+}
+.main__header {
+  position: absolute;
+  left: 25%;
+  font-size: 64px;
+  width: 330px;
+}
+
+video {
   height: 600px;
 }/*# sourceMappingURL=effect.css.map */
