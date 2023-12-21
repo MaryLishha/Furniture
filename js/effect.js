@@ -7,6 +7,10 @@ container.onclick = function () {
 }
 const theme = document.querySelector('.header__theme') 
 theme.onclick = () => {
+let body = document.querySelector('body')
+    body.classList.toggle('green-theme')
 let themeIcon = document.querySelector('.header__theme_icon') 
     themeIcon.classList.toggle('header__theme_active_float')
+
+    console.log(body)
 }

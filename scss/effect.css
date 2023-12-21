@@ -24,6 +24,10 @@ body {
   margin-top: 20px;
 }
 
+.body {
+  background-color: #F4F4F4;
+}
+
 body, .green-theme {
   background-color: #e5f8d3;
   color: #020D31;
@@ -144,4 +148,11 @@ p {
   transform: rotate(45deg);
   transform-origin: center;
   position: absolute;
+}
+
+.main__photo {
+  background-image: url("../effects/Subtract_main.png");
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 600px;
 }/*# sourceMappingURL=effect.css.map */
