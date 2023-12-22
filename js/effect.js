@@ -11,6 +11,11 @@ let body = document.querySelector('body')
     body.classList.toggle('green-theme')
 let themeIcon = document.querySelector('.header__theme_icon') 
     themeIcon.classList.toggle('header__theme_active_float')
-
-    console.log(body)
+    let p = document.querySelectorAll('p')
+    for (let col = 0; col < p.length; col++) {
+        // p[col]
+       p[col].classList.toggle('p-color')
+        console.log(p)
+    } 
+    // console.log(body)
 }

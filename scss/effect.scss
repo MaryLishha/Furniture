@@ -1,34 +1,24 @@
 @import 'fonts.scss';
 @import 'variables.scss';
+@import "effects_header.scss";
+@import "effects_main.scss";
+@import "effects_green-theme.scss";
 *{
     margin: 0;
     font-family: 'Inter', sans-serif;
-}
+}  
 a{
     text-decoration: none;
-    color: #000;
+  cursor: pointer;
+  color: $text-color;
 }
-a:hover{
-color: $main-color;
-}
-a:active{
-    color: $additional-color;
-}
+
 body{
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 20px;
+    box-sizing: border-box;
    
-}
-.body{
-     background-color: $top-color;
-     color: $text-color;
-}
-.green-theme{
-color: $main-color;
-background-color: #e5f8d3;
-
-
 }
 h1{
     font-weight: 800;
@@ -36,138 +26,4 @@ h1{
 p{
     font-weight: 500;
 }
-.header{
-    display: flex;
-    justify-content: space-between; 
-    &__main{
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-    &__theme{
-    width: 80px;
-    height: 36px;
-    border-radius: 20px;
-    background-color: $main-color;
-    
-    &_icon{
-        width: 36px;
-        height: 36px;  
-        border-radius: 20px;
-        background-color: $top-color;
-      &_photo{
-        background-image: url('../effects/icons8-главная-25.png');
-        width: 36px;
-        height: 36px;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-    
-    } 
-}
 
-    &__right{
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        position: relative;
-    }
-    &__nav{
-        display: flex;
-        gap: 16px;
-        height: 24px;
-    }
-    &__link{
-        width: 24px;
-        border-radius: 50%;
-    }
-    &__link:hover{
-        background-color: rgb(168, 242, 151);
-        transform: scale(1.1);
-    }
-    &__link:active{
-        transform: scale(0.9);
-    }
-
-    .header__container{
-        display: flex;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-        &_bar1, &_bar2, &_bar3{
-        width: 20px;
-        height: 3px;
-        background-color: $text-color;
-        margin: 2px 0;
-        transition: 0.4s;
-        }
-  
-    }   
-    &__popUp{
-      position: relative;
-    }  
-    &__menu{
-         display: flex;
-         gap: 16px;
-         flex-direction: column;
-         background-color: $top-color;
-         width: 200px;
-         border-radius: 20px;
-         box-shadow: -6px 5px 20px #9ca3962c;
-         padding: 36px;
-         position: absolute;
-         right: 100%;
-         &_hidden{
-            display: none;
-         }
-         &_bar{
-            font-size: $text-size;
-            cursor: pointer;
-         }
-    } 
-    }
-
-    .header__theme_active_float{
-        float: right;
-    }
-    .header_change .header__container_bar1 {
-        transform: rotate(-45deg) ;
-        transform-origin: center;
-        position: absolute;
-    } 
-    .header_change .header__container_bar3 {
-        opacity: 0;
-    }
-    .header_change .header__container_bar2 {
-        transform: rotate(45deg) ;
-        transform-origin: center;
-        position: absolute;
-    }
-    .main{
-        display: flex;
-        margin-top: 40px;
-        position: relative;
-        &__photo{
-            mask-image: url('../effects/Subtract_main.png');
-            mask-repeat: no-repeat
-        
-    }
-    &__info{
-        display: flex;
-        
-    }
-    &__header{
-        position: absolute;
-        left: 25%;
-        font-size: $header-size;
-        width: 330px;
-    }
-   
-}
-video{
-        height: 600px;
-    }

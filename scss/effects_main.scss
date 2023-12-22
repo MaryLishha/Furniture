@@ -1,0 +1,120 @@
+.main{
+    display: flex;
+    margin-top: 40px;
+        
+    &__left{
+        &_info{
+            display: flex;
+            justify-content: space-between;
+            &_button{
+                border: none;
+                font-size: $text2-size;
+                width: 124px;
+                height: 48px;
+                color: $top-color;
+                border-radius: 20px;
+                background: $main-color;
+                &_extra{
+                    border: none;
+                    font-size: $text2-size;
+                    width: 124px;
+                    height: 48px;
+                    color: $top-color;
+                    border-radius: 20px;
+                    background: $additional-color;
+                } 
+                &_extra:active{
+                background: $bg-hover-add;
+                transform: scale(1.1);
+                }
+                &_extra:hover{
+                    opacity: 0.8;
+                }
+            }
+            &_button:active{
+                background: $bg-hover-main;
+                transform: scale(1.1);
+            }
+            &_button:hover{
+                opacity: 0.8;
+            }
+           
+        }
+    }
+    &__textInfo{
+        // display: flex;
+        // flex-wrap: wrap;
+        &_title{
+            font-size: $header-size-base;
+            color: $main-color;
+            font-family: inherit;
+        }
+        &_title::after{
+            content: "your comfort";
+            color: $text-color;
+        }
+        &_text{
+            color: $text-color;
+            font-family: inherit;
+            font-size: $text2-size-base;
+            line-height: 1.5;
+        }
+    } 
+    &__group{
+        width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__description{
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.60);
+        box-shadow: 6px 6px 13.2px 0px rgba(96, 152, 45, 0.11);
+        backdrop-filter: blur(2px);
+        display: flex;
+        height: 100px;
+        // width: 30%;
+        gap: 40px;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+    &_info{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+       &_header{
+        font-family: inherit;
+        font-size: $header3-size;
+    } 
+    &_header::after{
+        content: "+";
+        color: $main-color;
+    }
+    &_text{
+        font-size: $text2-size;
+        font-family: inherit;
+        color: $text-color;
+    }
+    }
+    
+}
+    &__photo{
+        mask-image: url('../effects/Subtract_main.png');
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        // mask-position: center;
+        // height: 550px;
+        width: 880px;
+        // transform: rotate3d(0, 1,0, -180deg);
+}
+&__header{
+    font-size: $header-size;
+    width: 80px;
+    height: 20px;
+}
+
+
+
+}
