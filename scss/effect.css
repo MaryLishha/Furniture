@@ -1,5 +1,45 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap");
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #09043E;
+}
+
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+p {
+  font-weight: 500;
+}
+
+.body {
+  background-color: #F4F4F4;
+  color: #09043E;
+}
+
+.p-color {
+  color: #09043E;
+}
+
+.green-theme {
+  color: #60982D;
+  background-color: #e5f8d3;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -241,44 +281,4 @@
   font-size: 64px;
   width: 80px;
   height: 20px;
-}
-
-.body {
-  background-color: #F4F4F4;
-  color: #09043E;
-}
-
-.p-color {
-  color: #09043E;
-}
-
-.green-theme {
-  color: #60982D;
-  background-color: #e5f8d3;
-}
-
-* {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #09043E;
-}
-
-body {
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 20px;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-weight: 800;
-}
-
-p {
-  font-weight: 500;
 }/*# sourceMappingURL=effect.css.map */
