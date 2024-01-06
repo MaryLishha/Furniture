@@ -1,4 +1,5 @@
 $header-size-base: 96px;
+$header-size-basic: 72px;
 $header-size: 64px;
 $header2-size: 48px;
 $header3-size: 36px;
@@ -20,7 +21,7 @@ $bg-gradient:linear-gradient(90deg, rgba(255, 255, 255, 0.00) 15.07%, rgba(125, 
 $review:#FFD70B;
 
 
-$view-info: "./effects/view.png";
+$view-info: "../effects/Eye.png";
 $view-hover: "./effects/hoverview.png";
 $cart-img: "./effects/cart.png";
 $arrow-left: "./effects/left.png";

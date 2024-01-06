@@ -14,8 +14,27 @@ let themeIcon = document.querySelector('.header__theme_icon')
     let p = document.querySelectorAll('p')
     for (let col = 0; col < p.length; col++) {
         // p[col]
-       p[col].classList.toggle('p-color')
+           p[col].classList.toggle('p-color')
+        // p[col].style.backgroundColor='red'
         console.log(p)
     } 
     // console.log(body)
 }
+// var i = 0;
+// var txt = 'Furnish for '; /* Текст */
+// var speed = 50; /* Скорость/длительность эффекта в миллисекундах */
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     document.getElementById("demo").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
+// typeWriter()
+let ballSpread = document.querySelector('.cont')
+let ballSpreadShow = document.querySelector('.div__ball')
+setTimeout(() => {
+    ballSpread.classList.toggle('cont')
+    ballSpreadShow.classList.toggle('div__ball')
+}, 3500);
