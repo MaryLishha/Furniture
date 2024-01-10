@@ -37,4 +37,4 @@ let ballSpreadShow = document.querySelector('.div__ball')
 setTimeout(() => {
     ballSpread.classList.toggle('cont')
     ballSpreadShow.classList.toggle('div__ball')
-}, 1000);
+}, 6000);
